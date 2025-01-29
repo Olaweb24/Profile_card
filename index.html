@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">My Profile Card</div>
+        <div class="cards-wrapper">
+            
+            <!--Profile Picture-->
+            <img src="Olaitan.jpg" alt="" data-testid="profilePicture">
+        
+            <div class="card">
+            <!--Full Name-->
+                <h1 data-testid="fullName"><strong>Akinkuolie Olaitan</strong></h1>
+
+            <!--Job Title-->
+                <h3 data-testid="jobTitle">Frontend Software Developer</h3>
+
+                <div class="location">
+                    <p data-testid="currentLocation" class="location-head">Port Harcourt, Nigeria</p>
+                    ||
+
+                <p data-testid="emailAddress" class="email">olaitanclems@gmail.com</p>
+                </div>
+                
+               
+                <hr>
+
+            <!--Short Bio-->
+                <div class="bio-container"><button onclick="dropdown()" data-testid="shortBio" id="bio">About Me</button>
+                    <div>
+                        <p>Akinkuolie Olaitan is a passionate <strong>Frontend Software Developer</strong> with a strong background in <strong>computer science.</strong> He holds a <strong>BSc in Computer Science from Tai Solarin University of Education.</strong>  
+
+                            Beyond coding, Olaitan is also a <strong>data entry expert, freelancer, and content creator.</strong></p>
+                    </div>
+                    
+                </div>
+
+                <div class="btn"><button type="button">Contact</button></div>
+                
+                <div class="socialLinks-container"> 
+                    <ul class="social-links" data-testid="socialLinks">
+                        <li>
+                            <a href="https://x.com/olaitanclems24"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ogunduyi.clementina"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/olaitan-clementina-2353b3204/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <p data-testid="currentTimeUTC" id="utc"></p>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
