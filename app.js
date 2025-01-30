@@ -9,13 +9,3 @@ setInterval(updateUTCTime, 1000);
 
 // Initialize immediately
 updateUTCTime();
-
-
-function dropdown() {
-    var aboutSection = document.getElementById("bio-Content");
-    if (aboutSection.style.display === "none") {
-        aboutSection.style.display = "block"; // Show the content
-    } else {
-        aboutSection.style.display = "none"; // Hide the content
-    }
-}
